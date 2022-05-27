@@ -8,7 +8,7 @@ import VueRouter from 'vue-router';
 import App from './views/App';
 Vue.use(VueRouter);
 
-const router = new VueRouter({
+/* const router = new VueRouter({
     routes: [
         {
             path:'',
@@ -16,10 +16,10 @@ const router = new VueRouter({
             component:'',
         }
     ]
-});
+}); */
 
 const app = new Vue({
     el: '#root',
     render: h => h(App),
-    router
+    /* router */
 });
