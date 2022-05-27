@@ -1,10 +1,12 @@
 <template>
     <div>
+        <Header/>
         <PostList/>
     </div>
 </template>
 
 <script>
+import Header from '../components/Header.vue';
 import PostList from '../components/PostList.vue';
 
 
