@@ -10,6 +10,7 @@ Vue.use(VueRouter);
 
 import PostList from './components/PostList';
 import Post from './components/Post';
+import AboutUs from './components/AboutUs';
 
 
 
@@ -24,7 +25,7 @@ const router = new VueRouter({
         {
             path:'/about-us',
             name:'about-us',
-            component:about-us,
+            component:AboutUs,
         },
     ]
 });

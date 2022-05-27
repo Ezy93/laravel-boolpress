@@ -8,13 +8,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item me-2">
                             <router-link :to="{ name: 'home'}">Home</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link :to="{ name: 'about-us'}">About us</router-link>
+                        </li>
                     </ul>
-                    <span class="navbar-text">
-                        Navbar text with an inline element
-                    </span>
                 </div>
             </div>
         </nav>
