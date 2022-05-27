@@ -22,9 +22,9 @@ const router = new VueRouter({
             component:PostList,
         },
         {
-            path:'/post',
-            name:'post',
-            component:Post,
+            path:'/about-us',
+            name:'about-us',
+            component:about-us,
         },
     ]
 });

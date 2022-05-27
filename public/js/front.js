@@ -1952,6 +1952,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Post'
 });
@@ -3307,7 +3323,42 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" })
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row mt-3" }, [
+      _c("div", { staticClass: "card mb-3 mx-2 p-0" }, [
+        _c("div", { staticClass: "row g-0" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-fluid rounded-start",
+              attrs: { src: _vm.post[_vm.id].img_url, alt: "..." },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-8" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [
+                _vm._v(_vm._s(_vm.post[_vm.id].title)),
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-text" }, [
+                _vm._v(_vm._s(_vm.post[_vm.id].description)),
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-text" }, [
+                _c("small", { staticClass: "text-muted" }, [
+                  _vm._v(_vm._s(_vm.post[_vm.id].author)),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-text" }, [
+                _vm._v(_vm._s(_vm.post[_vm.id].created_at)),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -19021,9 +19072,9 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     name: 'home',
     component: _components_PostList__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
-    path: '/post',
-    name: 'post',
-    component: _components_Post__WEBPACK_IMPORTED_MODULE_4__["default"]
+    path: '/about-us',
+    name: 'about-us',
+    component: about - us
   }]
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
