@@ -7,8 +7,11 @@
     <title>Mail da boolpress</title>
 </head>
 <body>
-    <h1>grazie per aver contattao Boolpress</h1>
-    <h3>contenuto di prova</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere laborum quas maxime? Nisi rerum est veniam libero id hic quaerat. Est natus maiores magni laborum voluptatum aperiam praesentium necessitatibus!</p>
+    <h1> Ciao {{$author}}, grazie per aver contattao Boolpress</h1>
+    <h3>Ricontatta l'utente a questa mail: {{$authorMail}}</h3>
+    <p>
+        Questo è il messaggio inviato dall'utente:
+        {{$mailContent}}
+    </p>
 </body>
 </html>

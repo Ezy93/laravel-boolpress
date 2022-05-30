@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Mail\SendNewMail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactsController extends Controller
 {
@@ -12,7 +14,7 @@ class ContactsController extends Controller
     }
 
     public function contactSend(Request $request){
-        dd($request->all());
-        return redirect('guest.home')->with('message', 'il messaggio è stato inviato correttamente');
+        Mail::to($request->guestMail)->send(new SendNewMail($request->guestName, $request->guestMail, $request->guestMessage));
+        return redirect()->route('guest.contact')->with('message', "$request->guestName il messaggio è stato inviato correttamente");
     }
 }
