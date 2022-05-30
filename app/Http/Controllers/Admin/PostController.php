@@ -51,7 +51,7 @@ class PostController extends Controller
         $newPost = new Post();
         $newPost->title = $data['title'];
         $newPost->author = $data['author'];
-        $newPost->img_url = $data['img_url'];
+        $newPost->img_url = Storage::put('uploads', $data['img_url']);
         $newPost->description = $data['description'];
         $newPost->slug = Str::slug($data['title'],'-');
         $newPost->save();

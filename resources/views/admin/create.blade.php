@@ -9,7 +9,7 @@
                 <a href="{{ route('admin.posts.index') }}" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">Posts index</a>
             </div>
         </div>
-        <form class="row row-cols-4 g-3 flex-column align-items-center" action="{{ route("admin.posts.store")}}" method="POST">
+        <form class="row row-cols-4 g-3 flex-column align-items-center" action="{{ route("admin.posts.store")}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="col">
                 <h2>
@@ -25,7 +25,7 @@
             </div>
             <div class="col">
                 <label for="img_url">Link dell'immagine:</label>
-                <input type="text" name="img_url" id="img_url" class="form-control">
+                <input type="file" name="img_url" id="img_url" class="form-control">
             </div>
             <div class="col">
                 <label for="title">Titolo del post:</label>
