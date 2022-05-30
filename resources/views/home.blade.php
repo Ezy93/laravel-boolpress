@@ -18,6 +18,9 @@
                 </div>
             </div>
         </div>
+        <div class="col-12">
+            <a class="btn btn-primary" href="">Invia una mail.prova</a>
+        </div>
     </div>
 </div>
 @endsection
