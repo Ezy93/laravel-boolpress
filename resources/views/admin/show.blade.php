@@ -10,7 +10,11 @@
             </div>
             <div class="col-12">
                 <div class="card">
-                    <img src="{{$post->img_url}}" class="card-img-top" alt="{{'immagine di '.$post->title}} ">
+                    @if (str_starts_with($post->img_url, 'uploads'))
+                        <img src="{{asset('/storage').'/'.$post->img_url}}" class="card-img-top" alt="{{'immagine di '.$post->title}} ">
+                    @else
+                        <img src="{{$post->img_url}}" class="card-img-top" alt="{{'immagine di '.$post->title}}">
+                    @endif
                     <div class="card-body">
                         <h3 class="card-title mb-3">{{$post->title}}</h3>
                         <h5 class="card-subtitle mb-3">{{$post->author}}</h5>
